@@ -13,7 +13,96 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: var(--pale_blue);
 }
+
+body {
+    background-image: url('../images/bg-mobile.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.container {
+    height: 100vh;
+    padding-inline: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container > * {
+    background-color: var(--dark_blue);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.logo {
+    height: 200px;
+    border-top-right-radius: 100px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 25px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+
+.icon-container {
+    display: flex;
+
+}
+.icon {
+    display: inline-block;
+    background-color: var(--very_dark_blue);
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.icon img {
+    width: 1.8rem;
+}
+
+.storage-info {
+    height: 150px;
+}
+
+.slider-background {
+    width: 100%;
+    height: 18px;
+    background-color: hsl(229, 63%, 18%);
+    border-radius: 9px;
+    border: 2px solid hsl(229, 63%, 18%);
+    position: relative;
+}
+
+.slider-status {
+    width: 75%;
+    background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 14px;
+    border-radius: 7px;
+    position: relative;
+    left: 1px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
 
 
 
