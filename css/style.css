@@ -132,7 +132,6 @@ body {
 
 .remain-space {
     height: 80px;
-    /* width: 200px; */
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -164,4 +163,34 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:800px) {
+    body {
+        background-color: var(--very_dark_blue);
+        background-image: none;
+    }
+
+    .container {
+        height: 90vh;
+        width: 80%;
+        max-width: 1440px;
+        /* padding-inline: 25px; */
+        /* margin-inline: auto; */
+        /* display: flex; */
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 15px; */
+    }
+
+    .logo {
+        flex: 0 0 350px;
+    }
+
+    .storage-info {
+        flex: 1 0 350px;
+    }
+
+
 }
