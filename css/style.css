@@ -169,19 +169,22 @@ body {
     body {
         background-color: var(--very_dark_blue);
         background-image: none;
+
+        background-image: url('../images/bg-desktop.png');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: bottom;
     }
 
     .container {
         height: 90vh;
         width: 80%;
         max-width: 1440px;
-        /* padding-inline: 25px; */
-        /* margin-inline: auto; */
-        /* display: flex; */
         flex-direction: row;
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* gap: 15px; */
+        background-image: url('../images/bg-desktop.png');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: bottom;
     }
 
     .logo {
@@ -190,7 +193,17 @@ body {
 
     .storage-info {
         flex: 1 0 350px;
+        position: relative;
+        top: 24px;
     }
 
+    .remain-space {
+        top: -35%;
+        right: 30px;
+    }
+
+    .storage-info h5 {
+        align-self: flex-start;
+    }
 
 }
